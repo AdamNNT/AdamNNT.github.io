@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-padding-xlarge w3-hide-large w3-display-topleft w3-hover-white" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b> The New New<br>Thing, Part 2 of Midterm by Adam Gasca</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Hypothesis</a>
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Visual Background</a>
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Background</a>
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Discussion</a>
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Conclusion</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>The New New Thing</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>The Future of a UX Designer</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>Hypothesis</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>As we get deeper into the Internet of Things era many occupations are having to have to adapt to
+      the rapid change. These occupations having to adapt include many different forms of engineers to various
+      types of designers, more specifically the UX designer or user experience designer. The UX designer
+      stands to be heavily impacted with the Internet of Things  and it’s growing number of smart connected
+      objects now being able to connect to the internet. </p>
+  </div>
+
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="images/FirstWordofInternet.jpeg" style="width:100%" onclick="onClick(this)" alt="At 10:30 p.m., October 29, 1969, the first message on ARPANET is sent from UCLA to Stanford Research Insitute. &nbsp; &nbsp; It is the birth of the Internet.">
+      <img src="images/firstsmartphone.jpeg" style="width:100%" onclick="onClick(this)" alt="First smartphone invented.">
+      <img src="images/Smartwatches.jpeg" style="width:100%" onclick="onClick(this)" alt="The new watch, is now smart. Pictured above are several kinds Android smart watches.">
+    </div>
+
+    <div class="w3-half">
+      <img src="images/FirstThingBorn2.jpeg" style="width:100%" onclick="onClick(this)" alt="1990, John Romkey and friend Simon Hackett who built the first toaster connected to the internet. This is the known to be the first thing in the Internet of Things.">
+      <img src="images/Thermostats.jpeg" style="width:100%" onclick="onClick(this)" alt="The Nest Thermostat. A new kind of Thermostat that is self learning, sensor-driven, and Wi-Fi enabled.">
+      <img src="images/IronMan_Jarvis1.jpeg" style="width:100%" onclick="onClick(this)" alt="In the future we could expect, not exact but a similar user experience when interacting with our everday devices.">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black w3-padding-0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Background -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Background</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>What is the IoT, a.k.a. the Internet of Things? According to the article “How Smart, Connected Products Are Transforming Competition” by Michael E. Porter, the phrase “internet of things” reflects the growing number of smart, connected products and highlight the new opportunities they can represent. In this article porter goes into greater detail explaining how the Internet of Things is transforming they way things are being done in businesses, as well as the effects it has on competition.
+    <p>The second article “Enabling the Internet of Things” by Roy Want, Bill Schilit, and Scott Jenson analyze several aspects of the Internet of Things including the definition, and what it means for the future of certain software. This article also goes into it depth whether or not the Internet of things exist, concluding that it does exist but only for those businesses who are affected by it currently.</p>
+    <p>The third reference is a documentary by PBS called the “Big Data Revolution” where through out the video they explain and provide various examples of big data gathering. It is reinforced in this documentary that big data has big plans for the future, proposing new developments and transformations regarding our interaction with our everyday technology, effectively changing the way we live. </p>
+    <p>The fourth reference document I will mention is actually a slideshow about the big data & analytics. This slideshow examines big data itself which can be interpreted as “a collection of data sets so large and complex that it becomes difficult to process using on-hand database management tools. Through out this slideshow presentation the examination of the trend of big data and how it used to prevent diseases, spot business trends, combat crime, etc. It then goes into depth on big data’s 3V’s that include: volume, velocity, and variety. Volume meaning scale or the volume of the data, velocity regarding speed of the data being gathered, and variety referring to complexity of the data. This slideshow concludes by explaining the type of technology and services that use big data.</p>
+
+    </p>
+  </div>
+
+  <!-- Discussion -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Discussion</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>"Information is now a design material." - Mike Kuniavsky</p>
+    <p>Now as I stated above the Internet of Things is will have a big impact on the UX designer. How and why will the Internet of Things have such an impact on UX designers? You ask. The internet of Things as been affecting UX designers for the last 10-15 years. If you think back to the user experience that began on our desktop, overtime changing with the constant evolution of smartphones, tablets, watches, and televisions. UX designers are already being effected, but now we are taking another step forward that may have big implications for how UX designers will design our interaction with future devices. Due to more devices being “connected” this is calling for innovative ways to create a good user experience with less and less GUI. More devices will begin to have small or no visual interfaces, which results in fewer buttons. We are entering time period where we will most likely interact with devices with our voice, or some form of gestures. Personally I think the challenge of creating a user experience on one device that can be carried over through other devices will probably be one of the bigger challenges faced by UX designers moving forward. Since so many devices in the future will be connected, most likely users will eventually want a seamless interaction between all of their devices. This an example of seamless user experience can be described when a user wants to capture a screenshot from his tv, then transfer it to his phone, while simultaneously transferring the screenshot to his laptop, all done through voice or gestures. I know, I know sound like a scene out of the movie Iron Man, while our devices of the may not be be able to do everything Mr.Stark’s did in the movie we can expect a similar user experience regarding the interaction with voice and gestures. A main goal by Alan Kay to achieve moving forward is to make it so the computer disappears into the environemt.
+
+    </p>
+    <p><b>Things expected to happen</b>:</p>
+  </div>
+
+  <!-- Other Things that could impact -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/HouseholdThings.jpeg" alt="IMG-1" style="width:100%">
+        <div class="w3-container">
+          <h3>Household Devices</h3>
+          <p>The everyday appliances and device we use around our homes with their proposed new looks designed by UX designers.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/Unknown.png" alt="IMG-2" style="width:100%">
+        <div class="w3-container">
+          <h3>Projected Outlook</h3>
+          <p>Connected device are projected to reach 50.1 billion in 2020.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="images/internet-of-things-adoption-prediction.jpeg" alt="IMG-3" style="width:100%">
+        <div class="w3-container">
+          <h3>What is to Come</h3>
+          <p>With more devices getting the ability to connect, 2020 will be a big year.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Conclusion -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Conclusion</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>To conclude the Internet of Things will have a bigger impact on our everyday lives. Due more devices being developed to connect to the internet and each other, this will result in companies gathering even more big data. With this trend continuing our lives and everyday interaction with the devices we use will become more and more tailored specific to the individual. I believe a gave enough evidence to support my hypothesis proving UX designers will have big challenges and big opportunities ahead of them. UX designers will be essentially designing our interaction, and most importantly our user experience.</p>
+  </div>
+
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
